@@ -127,3 +127,24 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+# Hayes files not checking in
+gene2go
+go.obo
+taxons/
+trees/
+networks/
+java/
+fastsemsim-code/
+biomart/
+.vscode/
+.local/
+python/*.out
+python/*.txt
+python/*.gene_info
+python/gene_info
+python/BioGRID
+python/new_nets
+python/old
+python/taxid_taxname
