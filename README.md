@@ -26,13 +26,7 @@ set up this way:
 * Run 
         
 >     python resnik4.py -g1 [graph 1] -g2 [graph 2] -so [sana.out file]
-
-## Mac/Linux
-
-set up this different way:
-* altlist 1
-* altlist 2
-* altlist 3
+NOTE: Graph 1 and Graph 2 must be a .gw file
 
 --------
 NOTE: the module used in this code, fastsemsim, can be updated to a 2019 version. However, for the purposes of this project, this module is not required as it is already implemented in the file through the use of directories
