@@ -19,6 +19,12 @@ from __future__ import print_function
 # along with fastSemSim.  If not, see <http://www.gnu.org/licenses/>.
 
 
+import sys
+
+# NOTE Python 3 renamed the unicode type to str
+if sys.version_info[0] >= 3:
+    unicode = str
+
 '''
 #@desc
 Class to parse Annotation Corporus files in NCBI format [i.e. Gene Ontology Annotation files] tab separated file. 
