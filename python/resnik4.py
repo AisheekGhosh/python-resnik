@@ -6,7 +6,7 @@ import sys
 from pathlib import Path
 from unittest.mock import DEFAULT
 
-# COMMENT Locate fastsemsim-code under project folders
+
 root_directory = Path.cwd()
 if str(root_directory).endswith('python'):
     root_python_directory = root_directory
@@ -23,7 +23,7 @@ fss_directory_str = str(fss_directory)
 if fss_directory_str not in sys.path:
     sys.path.insert(0,fss_directory_str)
 
-# COMMENT add classes from fastsemsim to use in resnik
+
 from fastsemsim.Ontology import ontologies
 from fastsemsim.Ontology import AnnotationCorpus
 from fastsemsim.SemSim.ObjSetSemSim import ObjSetSemSim
@@ -37,7 +37,7 @@ from subprocess import call
 import os
 import argparse
 
-# COMMENT Define constants or variables with fixed values
+
 
 ONTOLOGY_CONVERT = {"BP" : "Process", "MF" : "Function", "CC" : "Component"}
 ONTOLOGY_ROOT = {"BP" : 8150, "MF" : 3674, "CC" : 5575}
@@ -136,9 +136,6 @@ def getTaxons(name):
         return [line.strip() for line in f]
 
 
-# NOTE For command line type
-# (py39_resnik) C:\...\python-resnik>cd python
-# python resnik4.py --graph1 CElegans --graph2 AThaliana
 
 if __name__ == "__main__":
 
